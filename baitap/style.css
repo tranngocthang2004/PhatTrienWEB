@@ -1,0 +1,23 @@
+.img1 img{
+    width: 150px;
+}
+.img2 img{
+    width: 700px;
+    height: 150px;
+}
+.box1{
+    width: 850px;
+    display: flex;
+}
+.img3 img{
+    height: 200px;
+    width: 750px;
+}
+.box2{
+    background-color: aquamarine;
+    width: 850px;
+}
+.box3 img{
+    height: 150px;
+    width:850px;
+}

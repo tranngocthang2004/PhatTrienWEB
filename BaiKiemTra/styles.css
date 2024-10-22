@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.baoboc {
+    display: flex;
+    width: 75%;
+}
+.img{
+    flex:1;
+    text-align: center;
+    margin-top: 80px;
+}
+.img img{
+   height: 350px; 
+}
+.khung{
+    margin-left: 40px;
+}
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.breadcrumb li {
+    margin-right: 5px;
+}
+.khuyenmai {
+    color: red;
+}
+.breadcrumb li::after {
+    content: ">";
+    margin-left: 5px;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: blue;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li.active {
+    color: grey;
+    pointer-events: none;
+}
+#buy-now, #add-to-cart {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#buy-now:hover, #add-to-cart:hover {
+    background-color: darkred;
+}
+.giagoc {
+    text-decoration: line-through;
+    color: grey;
+}
+table, th, td {
+    width: 50%;
+    border: 1px solid rgb(11, 11, 11);
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+}

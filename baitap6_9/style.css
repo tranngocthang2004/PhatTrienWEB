@@ -1,0 +1,26 @@
+#MucLuc {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 60px;
+    width: 200px;
+  }
+  
+  #MucLuc ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #MucLuc ul li {
+    margin: 5px 0;
+  }
+  
+  #MucLuc ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #MucLuc ul li a:hover {
+    text-decoration: underline;
+  }
+  

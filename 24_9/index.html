@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nối Chuỗi và Tính Tổng Tiền</title>
+</head>
+<body>
+    <h2>Form Nối Chuỗi</h2>
+    
+    <label for="text1">Textbox 1:</label>
+    <input type="text" id="text1" placeholder="Nhập văn bản 1">
+    
+    <label for="text2">Textbox 2:</label>
+    <input type="text" id="text2" placeholder="Nhập văn bản 2">
+    
+    <button onclick="concatStrings()">Nối Chuỗi</button>
+    
+    <p>Kết quả hiển thị trên form: <span id="resultLabel"></span></p>
+
+    <h2>Tính Tổng Tiền</h2>
+    
+    <label for="price">Giá sản phẩm:</label>
+    <input type="number" id="price" value="100" readonly> <!-- Đơn giá cố định -->
+    
+    <label for="quantity">Số lượng:</label>
+    <input type="number" id="quantity" value="1" readonly>
+    
+    <button onclick="increaseQuantity()">Tăng</button>
+    <button onclick="decreaseQuantity()">Giảm</button>
+    
+    <p>Tổng tiền: <span id="totalPrice"></span> VND</p>
+
+    <script>
+        // Phần A: Nối chuỗi từ 2 textbox
+        function concatStrings() {
+            // Lấy giá trị từ 2 textbox
+            let text1 = document.getElementById("text1").value;
+            let text2 = document.getElementById("text2").value;
+            
+            // Nối chuỗi
+            let result = text1 + " " + text2;
+            
+            // Hiển thị qua alert
+            alert("Chuỗi nối: " + result);
+            
+            // Hiển thị trên form bằng label
+            document.getElementById("resultLabel").textContent = result;
+        }
+
+        // Phần B: Tăng giảm số lượng và tính tổng tiền
+        function updateTotal() {
+            let price = parseFloat(document.getElementById("price").value);
+            let quantity = parseInt(document.getElementById("quantity").value);
+            let total = price * quantity;
+            
+            document.getElementById("totalPrice").textContent = total;
+        }
+
+        // Hàm tăng số lượng
+        function increaseQuantity() {
+            let quantityInput = document.getElementById("quantity");
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+            updateTotal();
+        }
+
+        // Hàm giảm số lượng
+        function decreaseQuantity() {
+            let quantityInput = document.getElementById("quantity");
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+            updateTotal();
+        }
+
+        // Gọi cập nhật tổng tiền ban đầu
+        updateTotal();
+    </script>
+</body>
+</html>
+

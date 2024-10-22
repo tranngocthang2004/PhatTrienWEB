@@ -1,0 +1,74 @@
+
+<body>
+    <form>
+        <div class="khung1">
+            <h2>Zoo Keeper Application Form</h2>
+            <i>Please complete the form. Mandatory fields are marked with a <span>*</span>.</i>
+            <fieldset>
+                <legend>CONTACT DETAILS</legend>
+                <div class="input">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="telephone">Telephone <span>*</span></label>
+                    <input type="tel" id="telephone" name="telephone" required><br>
+
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" required><br>
+                </div>
+            </fieldset>
+        </div>
+        <div class="khung2">
+            <fieldset>
+                <legend>PERSONAL INFORMATION</legend>
+                <div class="input">
+                    <label for="age">Age <span>*</span></label>
+                    <input type="number" id="age" name="age" required><br>
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select><br>
+
+                    <label for="zoo-keeper-experience">When did you first know you wanted to be a zoo-keeper?</label>
+                    <textarea id="zoo-keeper-experience" name="zoo-keeper-experience" rows="4"></textarea><br>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="khung3">
+            <fieldset>
+                <legend>PICK YOUR FAVORITE ANIMALS</legend>
+                
+                <input type="checkbox" id="zebra" name="favorite-animals" value="zebra">
+                <label for="zebra">Zebra</label>
+
+                <input type="checkbox" id="cat" name="favorite-animals" value="cat">
+                <label for="cat">Cat</label>
+
+                <input type="checkbox" id="anaconda" name="favorite-animals" value="anaconda">
+                <label for="anaconda">Anaconda</label>
+
+                <input type="checkbox" id="human" name="favorite-animals" value="human">
+                <label for="human">Human</label>
+
+                <input type="checkbox" id="elephant" name="favorite-animals" value="elephant">
+                <label for="elephant">Elephant</label>
+
+                <input type="checkbox" id="wildebeest" name="favorite-animals" value="wildebeest">
+                <label for="wildebeest">Wildebeest</label>
+
+                <input type="checkbox" id="pigeon" name="favorite-animals" value="pigeon">
+                <label for="pigeon">Pigeon</label>
+
+            </fieldset>
+        </div>
+
+        <div class="section">
+            <button type="submit">Submit Application</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body, html {
+    height: 100%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+}
+.img img{
+    width: 200px;
+    height: 100%;
+    border-radius: 0% 70% 70% 0%;
+    margin-right: 70px;
+}
+.khung{
+    background-color: rgb(221, 68, 68);
+    width: 750px;
+    height: 330px;
+    border-radius: 0% 20% 20% 0%;
+    display: flex;
+}
+#h3{
+    margin-top: 30px;
+    margin-left: 85px;
+    font-family :'Times New Roman', Times, serif;
+    color: bisque;
+    font-size: 6;
+}
+h1{
+    font-family: 'Brush Script MT',Times,serif;
+    color: blanchedalmond;
+}
+.khotho{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(91, 65, 33);
+}

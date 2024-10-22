@@ -1,0 +1,42 @@
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:bisque;
+    margin-left: 110px;
+}
+#p1{
+    text-indent: 30px;
+}
+h3{
+    margin-left: 70px;
+}
+.img img{
+    height: 200px;
+}
+.img{
+    margin-left: 140px;
+}
+.img2 img{
+    width: 130px;
+    height: auto;
+    border-radius: 50% 50% 50% 50%;
+}
+.img2{
+    margin-left: 100px;
+}
+.content{
+    display: flex;
+    margin-top: 20px;
+}
+.khotho{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(196, 196, 255);
+    font-size: 16px;
+    margin-left: 20px;
+}
+.khung{
+    background-image: url("background.jpg");
+    height: 400px;
+    width: 900px;  
+};
+

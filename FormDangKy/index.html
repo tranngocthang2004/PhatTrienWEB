@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="khung">
+        <div class="form">
+            <h2>Đăng ký</h2>
+            <form id="registrationForm" action="javascript:void(0);" method="POST">
+                <div class="nhaphoten formnhap">
+                    <input type="text" id="ho" placeholder="Họ" required>
+                    <input type="text" id="ten" placeholder="Tên" required>
+                </div>
+                <div class="formnhap">
+                    <input type="tel" id="sodienthoai" placeholder="Số điện thoại">
+                </div>
+                <div class="formnhap">
+                    <input type="password" id="matkhau" placeholder="Mật khẩu" required>
+                </div>
+                <div class="formnhap">
+                    <label for="birthdate">Ngày sinh:</label>
+                    <div class="ngaysinh">
+                        <select id="day" name="day" required>
+                            <option value="">Ngày</option>
+                        </select>
+                        <select id="month" name="month" required>
+                            <option value="">Tháng</option>
+                        </select>
+                        <select id="year" name="year" required>
+                            <option value="">Năm</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formnhap">
+                    <label>Giới tính</label>
+                    <div class="gender-options">
+                        <input type="radio" name="gender" value="female" required> Nữ
+                        <input type="radio" name="gender" value="male" required> Nam
+                    </div>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </form>
+            <p id="result"></p> <!-- Phần này sẽ hiển thị thông báo -->
+        </div>
+    </div>
+</body>
+</html>
